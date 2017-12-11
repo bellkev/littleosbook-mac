@@ -9,6 +9,7 @@ ASFLAGS = -f elf -Fdwarf -g
 all: os.iso
 
 os.iso: kernel.elf
+	mkdir -p img/boot/grub
 	cp kernel.elf img/boot/
 	cp grub.cfg img/boot/grub/
 	grub-mkrescue -o os.iso img
