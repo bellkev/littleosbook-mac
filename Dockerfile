@@ -13,5 +13,5 @@ WORKDIR /root
 RUN curl -O ftp://ftp.gnu.org/gnu/grub/grub-2.02.tar.gz && tar -xzvf grub-2.02.tar.gz
 RUN cd grub-2.02 && ./configure --target=i386 --with-platform=pc && make install
 
-RUN mkdir -p /opt/kos
-WORKDIR /opt/kos
+RUN mkdir -p /opt/littleosbook
+WORKDIR /opt/littleosbook
